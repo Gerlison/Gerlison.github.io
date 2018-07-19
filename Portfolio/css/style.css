@@ -208,7 +208,9 @@ textarea{
             height: 550px;
             background: url('../images/background_header.jpg') no-repeat;
             background-size: cover;
-            background-position: left;            
+            background-position: left; 
+            display: flex;
+            align-items: flex-end;           
         }
         .slider-items{
             position: absolute;
