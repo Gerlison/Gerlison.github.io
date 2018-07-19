@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 body{
@@ -207,12 +208,10 @@ textarea{
             height: 550px;
             background: url('../images/background_header.jpg') no-repeat;
             background-size: cover;
-            background-position: left;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            background-position: left;            
         }
         .slider-items{
+            position: absolute;
             width: 100%;
             max-width: 1440px;
             padding: 80px 100px;
@@ -220,8 +219,6 @@ textarea{
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-            position: absolute;
-            /* margin-right: -300%; */
         }
         .slider-items .info{
             width: 60%;
@@ -263,7 +260,7 @@ textarea{
     /* Slide animation classes */
         .animationOut{
             opacity: 0;
-           animation: out 3s;
+           animation: out 1s;
         }
         .animationIn{
             animation: in 3s;
@@ -271,22 +268,22 @@ textarea{
 
         @keyframes out {
             from {
-                margin-left: 0;
+                left: 0;
                 opacity: 1;
             }
             to {
-                margin-left: -300%;
+                left: -3%;
                 opacity: 0;
             }
         }
 
         @keyframes in {
             from {
-                margin-left: 300%;
+                left: 3%;
                 opacity: 0;
             }
             to {
-                margin-left: 0;
+                left: 0;
                 opacity: 1;
             }
         }
