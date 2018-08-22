@@ -99,7 +99,7 @@ textarea{
             height: auto;
             border-bottom: 1px solid #f15a24;
             z-index: 3;
-            box-shadow: 0px 0px 20px 1px #555;
+            box-shadow: 0px 0px 10px 1px #5555;
             animation: menu-slidedown .5s;
         }
     /* menu mobile */
@@ -407,11 +407,13 @@ textarea{
             overflow: hidden !important;
         }
         .portfolio-showcase{
-            width: 200px;
             height: 200px;
             padding: 2px;
             margin: auto;
             background: #ccc;
+        }
+        .portfolio-showcase img{
+            height: 100%;
         }
      
     /* Budget */
@@ -420,8 +422,9 @@ textarea{
             max-width: 250px;
             margin: 0 auto;
             height: 450px;
-            background-color:#eee;
-            box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.6);
+            background-color:#fff;
+            box-shadow: 0px 2px 5px 0px #cecece;
+            border-radius: 5px;
             cursor: pointer;
          
         }

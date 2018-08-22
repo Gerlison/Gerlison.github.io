@@ -6,7 +6,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav: true,
-        //autoWidth:true,
+        autoWidth:true,
         responsiveClass:true,
         responsive:{
             0:{
