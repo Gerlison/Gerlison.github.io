@@ -341,7 +341,7 @@ textarea{
         }
         main section{
             width: 100%;
-            padding: 7.32%;
+            padding: 7.32% 2%;
         }
         #skills #skill-items{
             padding: 20px;
@@ -591,7 +591,10 @@ textarea{
             font-size: 0.7em;
 
         }
-      
+/* Contact */
+#contact{
+    padding:7.32% 2%;
+}
 
 /* media querries */
 
@@ -655,5 +658,7 @@ textarea{
 
 
      
- 
-    
+/* support classes */
+.f1{
+    font-size: 1em;
+}
