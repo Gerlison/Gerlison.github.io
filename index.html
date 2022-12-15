@@ -38,30 +38,3 @@
 <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
 </script>
 
-<script>
-    (function () {
-      window.onload = function () {
-        const builder = new BlipChat()
-          .withAppKey('emFycDoyZWNhYmE5OC02MTk4LTQzYjUtODA1NS1iMTdmMTMxOWE3Mjg=')
-          .withCustomCommonUrl('https://gerlison-0mggp.chat.blip.ai/')
-          .withEnvironment('homolog') // 'production' || 'homolog'
-          .withAuth({
-            authType: BlipChat.DEV_AUTH,
-            userIdentity: '133874',
-            userPassword: 'passwrd',
-          })
-          .withAccount({
-            fullName: 'Francisco Gerlison',
-            phoneNumber: '+15055034455',
-            email: 'test@test.com',
-            encryptMessageContent: true
-          })
-
-        builder.build();
-
-        window.setTimeout(function() {
-          builder.toogleChat()
-        }, 500);
-      }
-    })()
-</script>
