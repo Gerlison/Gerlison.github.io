@@ -1,3 +1,34 @@
+<style>    
+/* STYLE DO FRAME DO B
+LIP CHAT */
+    #blip-chat-open-iframe {
+      display: none !important;
+    }
+
+    #blip-chat-container {
+      height: 100% !important;
+      bottom: 0 !important;
+      right: 0 !important;
+    }
+
+    #blip-chat-iframe {
+      top: 0 !important;
+      right: -400px !important;
+      bottom: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      max-height: 100% !important;
+      transform: none !important;
+      opacity: 1 !important;
+      box-shadow: none !important;
+      transition: 0.5s !important;
+    }
+
+    #blip-chat-iframe.blip-chat-iframe-opened {
+      right: 0 !important;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2) !important;
+    }
+</style>
 <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
 </script>
 <script>
@@ -6,35 +37,6 @@
             new BlipChat()
             .withAppKey('emFycDoyZWNhYmE5OC02MTk4LTQzYjUtODA1NS1iMTdmMTMxOWE3Mjg=')
             .withCustomCommonUrl('https://gerlison-0mggp.chat.blip.ai/')
-            .withCustomStyle(`
-                #blip-chat-open-iframe {
-                  display: none !important;
-                }
-
-                #blip-chat-container {
-                  height: 100% !important;
-                  bottom: 0 !important;
-                  right: 0 !important;
-                }
-
-                #blip-chat-iframe {
-                  top: 0 !important;
-                  right: -400px !important;
-                  bottom: 0 !important;
-                  height: 100% !important;
-                  width: 100% !important;
-                  max-height: 100% !important;
-                  transform: none !important;
-                  opacity: 1 !important;
-                  box-shadow: none !important;
-                  transition: 0.5s !important;
-                }
-
-                #blip-chat-iframe.blip-chat-iframe-opened {
-                  right: 0 !important;
-                  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2) !important;
-                }
-            `)
             .build();
         }
     })();
