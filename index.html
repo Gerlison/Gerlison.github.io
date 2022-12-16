@@ -56,6 +56,11 @@
         email: 'test@test.com',
         encryptMessageContent: true
       })
+      .withCustomStyle(`
+        #blip-chat-header {
+            display: none !important;
+        }
+      `)
 
     builder.build();
 
